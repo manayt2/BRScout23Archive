@@ -1,0 +1,110 @@
+{
+  "heading": "Stand Scout 23",
+  "logo": "logo.png",
+  "pages": [
+    {
+      "name": "Autonomous",
+      "widgets": [
+        {
+          "name": "Exit Community",
+          "type": "checkbox"
+        },
+        {
+          "type": "picture",
+          "file": "grid.png",
+          "height": 300,
+          "row": 4,
+          "col": 4,
+          "rowspan": 4
+        },
+        {
+          "name": "Top Scored",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 4,
+          "col": 1
+        },
+        {
+          "name": "Middle Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "name": "Bottom Scored",
+          "type": "spinbox",
+          "prefix": "Auto"
+        },
+        {
+          "type": "spacer",
+          "height": 20
+        },
+        {
+          "name": "Docked To Charging Station",
+          "type": "checkbox",
+          "labelColspan": 2
+        },
+        {
+          "name": "Charging Station Engaged",
+          "type": "checkbox",
+          "labelColspan": 2
+        }
+      ]
+    },
+    {
+      "name": "Teleop",
+      "widgets": [
+        {
+          "type": "picture",
+          "file": "grid.png",
+          "height": 300,
+          "col": 3,
+          "rowspan": 4
+        },
+        {
+          "name": "Top Scored",
+          "type": "spinbox",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "name": "Middle Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Bottom Scored",
+          "type": "spinbox"
+        },
+        {
+          "name": "Defense Rating",
+          "type": "dropdown",
+          "options": [
+            "Not Played",
+            "Not Effective",
+            "Average",
+            "Very Effective"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Endgame",
+      "widgets": [
+        {
+          "name": "Parking",
+          "type": "radio",
+          "options": [
+            "Docked & Engaged",
+            "Docked Only",
+            "Parked",
+            "None"
+          ],
+          "default": 3
+        },
+        {
+          "name": "Comments",
+          "type": "textarea"
+        }
+      ]
+    }
+  ]
+}
